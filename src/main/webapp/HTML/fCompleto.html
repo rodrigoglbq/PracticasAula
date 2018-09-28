@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/formCompEstilo.css">
+    </head>
+    <body>
+        <form action="../FormularioCompleto" method="post">
+
+            <fieldset class="field">
+
+                <legend class="leyenda">Datos Personales</legend>
+
+                <label for="usuario">Usuario:  </label>
+                <input type="text" name="Usuario" id="usuario" placeholder="Nombre del usuairo">
+
+                <br><br>
+
+                <label for="pass">Password:</label>
+                <input type="password" name="Password" id="pass" placeholder="Escriba la contraseña">
+
+                <br><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" name="Edad" id="edad" max="100" min="0">
+            </fieldset>
+
+            <fieldset class="field">
+
+                <legend class="leyenda">Otros Datos</legend>
+
+                <label for="estadoCv">Estado civil: </label>&nbsp;
+
+                <label for="estadoCv">Soltero/a:</label>
+                <input type="radio" name="Estado Civil" id="estadoCv" value="soltero">|
+
+                <label for="estadoCv">Casado/a: </label>
+                <input type="radio" name="Estado Civil" id="estadoCv" value="casado">|
+
+                <label for="estadoCv">Viudo/a: </label>
+                <input type="radio" name="Estado Civil" id="estadoCv" value="viudo">|
+
+                <label for="estadoCv">Divorciado/a: </label>
+                <input type="radio" name="Estado Civil" id="estadoCv" value="divorciado">
+
+                <br>
+
+                <label for="aficiones">Aficiones(uno o varios CTRL):</label>
+                <br>
+                <select name="Aficiones" id="aficiones" size="6" multiple="multiple">
+                    <option value="Deporte">Deporte</option>
+                    <option value="Musica">Música</option>
+                    <option value="Informatica">Informática</option>
+                    <option selected value="Viajar">Viajar</option>
+                    <option value="Tiendas">Tiendas</option>
+                    <option value="Juegos">Juegos</option>
+
+                </select>
+                <br>
+
+                <label for="comentario">Comentarios:</label>
+                <br>
+                <input  type="text" name="Comentario" id="comentario" size="15" maxlength="350" placeholder="Escriba su comentario...">
+
+            </fieldset>
+
+            <fieldset class="field">
+                <legend class="leyenda">Medios Tecnológicos</legend>
+
+                <label for="internet">¿Dispone de Internet?</label> &nbsp;
+
+                <label for="internet">Si</label>
+                
+                <input type="radio" name="Internet" id="internet" value="si">
+
+
+                <label for="internet">No</label>
+
+                <input type="radio" name="Internet" id="internet" value="no">
+
+                <br><br>
+
+                <label for="so">Sistema Operativo(elija uno)</label>
+                <br>
+                <select name="SO" id="so" size="4" multiple="multiple">
+                    <option value="Linux">Linux</option>
+                    <option value="Windows" selected>Windows</option>
+                    <option value="Macintosh">MacIntosh</option>
+                    <option value="Solaris">Solaris</option>
+                </select>
+
+            </fieldset>
+
+            <input class="boton" type="submit" name="Enviar" id="enviar" value="Enviar">
+
+            <input class="boton" type="reset" name="limpiar" id="limpiar" value="Limpiar">
+
+            <input type="hidden" name="Oculto" id="oculto" value="23">
+
+        </form>
+    </body>
+</html>

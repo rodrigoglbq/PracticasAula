@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-sep-2018, 21:16:17
+    Author     : Rodrigo
+*/
+h1{text-align: center; font-family: Verdana; background-color: blue; color: white;}
+
+#listSer{margin-right: 50px;float: left}
+#listJsp{float: left; margin-left: 333px }
+#listJstl{float: left; margin-left: 333px }
+
+#Serv{text-align: center}
+
+#respuesta{margin-top: 50px; margin-left: 550px;}
+
+header{background:darkturquoise}
+
+#bodySform{background-color:gray}
+
+h2{text-align: center; color: whitesmoke }

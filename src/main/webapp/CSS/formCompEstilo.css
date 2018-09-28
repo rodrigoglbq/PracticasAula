@@ -1,0 +1,21 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-sep-2018, 19:27:32
+    Author     : Rodrigo
+*/
+
+.field{margin-right: 150px; margin-left: 50px; background-color: rgb(228, 241, 150)}
+
+#comentario{width: 350px; height: 70px;}
+
+.boton{margin-right: 150px; margin-left: 50px}
+
+body{background-color: rgb(89, 243, 89)}
+
+.leyenda{color: rgb(36, 119, 36); font-weight: bold; font-style:oblique }
+
+label{color: rgb(192, 14, 14)}

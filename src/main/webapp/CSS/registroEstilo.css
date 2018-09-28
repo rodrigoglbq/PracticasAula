@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-sep-2018, 17:17:39
+    Author     : Rodrigo
+*/
+
+.menu{margin-left: 350px; border:1px ;border-color:rgb(14, 169, 221);}
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(14, 169, 221);
+    font-style: oblique;
+
+}
+
+
+body{background-color: rgb(97, 103, 110)}
+
+legend{ font-size:1.25em ;
+        border: 1.5px solid rgb(78, 11, 8) ;
+        border-block-end-style: groove;
+        border-block-end-style: hidden; 
+        color: rgb(39, 38, 38); 
+        font-weight: bold;
+        font-style:oblique 
+}
+
+label{font-weight: bold ;font-size: 1.08em; color:rgb (0, 0, 0)}
+
+body fieldset{
+    border: 2px solid slateblue;
+    margin-right: 350px; 
+    margin-left: 300px; 
+    background-color: #1C6E8C;
+    background: -webkit-linear-gradient(rgb(16, 147, 235),rgb(7, 77, 124));
+    margin-top:20px;
+    margin-bottom:20px; 
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px; background-color:  rgb(97, 103, 110);
+}
+
+[type="submit"]{
+    border: 1px solid; color:rgb(7, 77, 124) ;
+    box-shadow: 5px 5px 5px rgb(7, 77, 124) ;
+}
+
+
+[type="reset"]{
+    border: 1px solid; color:rgb(7, 77, 124) ;
+    box-shadow: 5px 5px 5px rgb(7, 77, 124) ;
+}
