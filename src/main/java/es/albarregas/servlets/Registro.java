@@ -51,7 +51,7 @@ public class Registro extends HttpServlet {
             out.println("<ul>");
 
             String[] error = new String[4];
-
+            
             if (request.getParameter("Nombre").equals("")) {
                 System.out.println("error nombre");
                 comprobar[0] = 0;
@@ -59,16 +59,16 @@ public class Registro extends HttpServlet {
 
             }
 
-            /*int year = Integer.parseInt(request.getParameter("Year"));
+            int year = Integer.parseInt(request.getParameter("Year"));
             int month = Integer.parseInt(request.getParameter("Month"));
             int day = Integer.parseInt(request.getParameter("Day"));
 
-            int[] meses = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};*/
+            int[] meses = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
- /*GregorianCalendar calendar = new GregorianCalendar();
+            GregorianCalendar calendar = new GregorianCalendar();
             
             if (calendar.isLeapYear(year)) {
-                meses[2] = 29;
+                meses[1] = 29;
             System.out.println("calendario bisiesto");
             }
 
@@ -76,7 +76,10 @@ public class Registro extends HttpServlet {
                  System.out.println("comprobar fecha");
                 comprobar[1] = 1;
                 error[1] = "ERROR.Tiene que introducir una Fecha correcta";
-            }*/
+            }
+            
+            
+            
             if (request.getParameter("Usuario").equals("")) {
 
                 comprobar[2] = 2;
@@ -88,8 +91,8 @@ public class Registro extends HttpServlet {
                 comprobar[3] = 3;
                 error[3] = "ERROR.Tiene que introducir una contraseña";
             }
-
-            if (comprobarError(request, response) == false) {
+            
+            if (comprobarError(request, response) == true) {
 
                 Map<String, String[]> miMapa = request.getParameterMap();
                 Iterator it = miMapa.entrySet().iterator();
@@ -373,7 +376,7 @@ public class Registro extends HttpServlet {
     static boolean comprobarError(HttpServletRequest request, HttpServletResponse response) {
 
         while (comprobar[0] == -1 || comprobar[1] == -1 || comprobar[2] == -1 || comprobar[3] == -1) {
-            return true;
+            
         }
         return false;
     }
